@@ -20,21 +20,21 @@
                                 <rect key="frame" x="20" y="44" width="374" height="778"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-VY-Xwr">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="424"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="435.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="374" id="DT4-dV-82Y"/>
                                             <constraint firstAttribute="height" constant="409" id="HCG-Jd-PXK"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6SX-o1-jLp">
-                                        <rect key="frame" x="0.0" y="425" width="374" height="353"/>
+                                        <rect key="frame" x="0.0" y="436.5" width="374" height="341.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" id="cVe-IS-I3p">
                                                 <rect key="frame" x="0.0" y="0.0" width="64.5" height="53.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-ZR-NvH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="Iuy-bt-Rrz"/>
                                                         </constraints>
@@ -43,7 +43,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2y-Jj-kLv">
-                                                        <rect key="frame" x="0.0" y="30" width="64.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="51" width="64.5" height="23.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Aal-iz-JHQ"/>
                                                         </constraints>
@@ -54,7 +54,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="246" verticalHuggingPriority="1" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="286" preservesSuperviewLayoutMargins="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="373" translatesAutoresizingMaskIntoConstraints="NO" id="82j-qh-WPn">
-                                                <rect key="frame" x="0.0" y="61" width="374" height="292"/>
+                                                <rect key="frame" x="0.0" y="75.5" width="374" height="266"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -77,11 +77,17 @@
                                         <rect key="frame" x="125" y="0.0" width="124" height="38"/>
                                         <color key="backgroundColor" red="0.40375643970000002" green="0.54618579150000002" blue="0.63767129180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="⬅️"/>
+                                        <connections>
+                                            <action selector="prevButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ff-Nn-bB0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-bZ-ugP">
                                         <rect key="frame" x="250" y="0.0" width="124" height="38"/>
                                         <color key="backgroundColor" red="0.40375643970000002" green="0.54618579150000002" blue="0.63767129180000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="➡️"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLR-34-gWj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
