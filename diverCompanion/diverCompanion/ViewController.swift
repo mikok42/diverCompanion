@@ -19,8 +19,6 @@ class ViewController: UIViewController {
         siteLocation.text = site1.giveData().location
         siteDescription.text = site1.giveData().description
     }
-
-
 }
 
 let site1 = diveSite(_name: "Salem Wreck", _location: "Red Sea, Egypt", _description: description1, _pictureName: "salemWreck", _rating: 4)
