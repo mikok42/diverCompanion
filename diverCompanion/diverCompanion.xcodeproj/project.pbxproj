@@ -14,6 +14,7 @@
 		D0D7788B26207D7C00767574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D7788A26207D7C00767574 /* Assets.xcassets */; };
 		D0D7788E26207D7C00767574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D7788C26207D7C00767574 /* LaunchScreen.storyboard */; };
 		D0D77897262088EF00767574 /* diveSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D77896262088EF00767574 /* diveSite.swift */; };
+		D0F2A59726234C680084ADBD /* siteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0F2A59626234C680084ADBD /* siteData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D0D7788D26207D7C00767574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0D7788F26207D7C00767574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D77896262088EF00767574 /* diveSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diveSite.swift; sourceTree = "<group>"; };
+		D0F2A59626234C680084ADBD /* siteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = siteData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D0D7788C26207D7C00767574 /* LaunchScreen.storyboard */,
 				D0D7788F26207D7C00767574 /* Info.plist */,
 				D0D77896262088EF00767574 /* diveSite.swift */,
+				D0F2A59626234C680084ADBD /* siteData.json */,
 			);
 			path = diverCompanion;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F2A59726234C680084ADBD /* siteData.json in Resources */,
 				D0D7788E26207D7C00767574 /* LaunchScreen.storyboard in Resources */,
 				D0D7788B26207D7C00767574 /* Assets.xcassets in Resources */,
 				D0D7788926207D7700767574 /* Main.storyboard in Resources */,

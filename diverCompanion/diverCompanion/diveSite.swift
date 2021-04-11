@@ -7,12 +7,35 @@
 import Foundation
 
 struct DiveSite: Codable { //ogarnij
-    private(set) var name: String
+    let name: String
     let description: String
     let location: String
     let rating: Int
     let pictureName: String
- 
+    
+    static func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
+               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        return nil
+    }
+    
+    static func parse(jsonData: Data) -> [DiveSite] {
+        do {
+            let decodedData = try JSONDecoder().decode([DiveSite].self, from: jsonData)
+            
+            return decodedData
+        } catch {
+            print(error.localizedDescription)
+            return []
+        }
+    }
+    
     static func getData() -> [DiveSite] {
         let description1 = """
         The Salem Express was a former 115m long passenger ferry which sank in 1991 at great human cost just south of Safaga. The immense tragedy of this event makes diving the Salem Express a unique experience that leaves a lasting impression on most scuba divers. She rests on her starboard side on a flat sand bottom at 27m of depth, with the shallowest section at just 7m.

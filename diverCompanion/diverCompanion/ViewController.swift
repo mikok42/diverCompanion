@@ -13,17 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var siteLocation: UILabel!
     @IBOutlet weak var siteDescription: UILabel!
     
-    var diveSites = DiveSite.getData()
+    var diveSites: [DiveSite] = [] // = DiveSite.getData()
     var siteArrayIterator = 0
     
-    func updateUI() {
+    func updateUI() {  
         siteImage.image = UIImage(named: diveSites[siteArrayIterator].pictureName)
         siteName.text =  diveSites[siteArrayIterator].name
         siteLocation.text =  diveSites[siteArrayIterator].location
         siteDescription.text =  diveSites[siteArrayIterator].description
     }
     override func viewDidLoad() {
-        siteDescription.sizeToFit()
+        if let localData = DiveSite.readLocalFile(forName: "siteData") {
+            diveSites = DiveSite.parse(jsonData: localData)
+        }
+        
         updateUI()
     }
     @IBAction func prevButtonPressed(_ sender: UIButton) {
@@ -35,7 +38,7 @@ class ViewController: UIViewController {
         updateUI()
     }
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        if siteArrayIterator <= diveSites.count - 1 {
+        if siteArrayIterator  < diveSites.count - 1 {
             siteArrayIterator += 1
         } else {
             siteArrayIterator = 0
