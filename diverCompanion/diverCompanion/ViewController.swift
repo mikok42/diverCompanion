@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         if let localData = DiveSite.readLocalFile(forName: "siteData") {
             diveSites = DiveSite.parse(jsonData: localData)
         }
-        
         updateUI()
     }
     @IBAction func prevButtonPressed(_ sender: UIButton) {
