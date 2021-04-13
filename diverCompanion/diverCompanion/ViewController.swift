@@ -23,8 +23,9 @@ class ViewController: UIViewController {
         siteDescription.text =  diveSites[siteArrayIterator].description
     }
     override func viewDidLoad() {
-        if let localData = DiveSite.readLocalFile(forName: "siteData") {
-            diveSites = DiveSite.parse(jsonData: localData)
+        if let localData = readLocalFile(forName: "siteData") {
+            let tempdiveSites: [DiveSite]? = parse(jsonData: localData)
+            diveSites = tempdiveSites ?? []
         }
         updateUI()
     }
