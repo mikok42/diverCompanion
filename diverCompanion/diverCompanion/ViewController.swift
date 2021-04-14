@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     var diveSites: [DiveSite] = [] // = DiveSite.getData()
     var siteArrayIterator = 0
     
+    let parser = JSONParser.sharedParser
+    
     func updateUI() {  
         siteImage.image = UIImage(named: diveSites[siteArrayIterator].pictureName)
         siteName.text =  diveSites[siteArrayIterator].name
@@ -23,8 +25,8 @@ class ViewController: UIViewController {
         siteDescription.text =  diveSites[siteArrayIterator].description
     }
     override func viewDidLoad() {
-        if let localData = readLocalFile(forName: "siteData") {
-            let tempdiveSites: [DiveSite]? = parse(jsonData: localData)
+        if let localData = parser.readLocalFile(forName: "siteData") {
+            let tempdiveSites: [DiveSite]? = parser.parse(jsonData: localData)
             diveSites = tempdiveSites ?? []
         }
         updateUI()

@@ -15,6 +15,7 @@ struct DiveSite: Codable {
     
     
 }
+
 //guard let
 //optionals
 //stworzyć klasę z singletonem
