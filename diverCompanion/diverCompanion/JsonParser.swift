@@ -9,18 +9,17 @@ import Foundation
 
 class JSONParser{
     static let sharedParser = JSONParser()
+    private init(){}
     
     func readLocalFile(forName name: String) -> Data? {
-
         do {
-            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
-               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-                return jsonData
-            }
+            guard let bundlePath = Bundle.main.path(forResource: name, ofType: "json") else { return nil }
+            guard let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) else { return nil }
+            return jsonData
         } catch {
             print(error)
+            return nil
         }
-        return nil
     }
 
      func parse<T: Codable>(jsonData: Data) -> T? {
@@ -31,4 +30,5 @@ class JSONParser{
             print(error.localizedDescription)
             return nil
         }
-    }}
+    }
+}
