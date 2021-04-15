@@ -15,10 +15,8 @@ struct DiveSite: Codable {
     
     
 }
-
-//guard let
 //optionals
-//stworzyć klasę z singletonem
+
 //completion blocks
 //json z serwera
 //typy generyczne

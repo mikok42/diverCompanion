@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var siteLocation: UILabel!
     @IBOutlet weak var siteDescription: UILabel!
     
-    var diveSites: [DiveSite] = [] // = DiveSite.getData()
+    var diveSites: [DiveSite] = []
     var siteArrayIterator = 0
     
     let parser = JSONParser.sharedParser
