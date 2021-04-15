@@ -12,13 +12,12 @@ struct DiveSite: Codable {
     let location: String
     let rating: Int
     let pictureName: String
-    
-    
 }
-//optionals
 
+//optionals
+//ARC!
 //completion blocks
-//json z serwera
+
 //typy generyczne
 //UI alert view
 //obsługa błędów

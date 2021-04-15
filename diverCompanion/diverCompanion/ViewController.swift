@@ -24,12 +24,32 @@ class ViewController: UIViewController {
         siteLocation.text =  diveSites[siteArrayIterator].location
         siteDescription.text =  diveSites[siteArrayIterator].description
     }
-    override func viewDidLoad(){
-        guard let localData = parser.readLocalFile(forName: "siteData") else { return }
-        let tempdiveSites: [DiveSite]? = parser.parse(jsonData: localData)
-        diveSites = tempdiveSites ?? []
-                updateUI()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        parser.readFromURL(fromURL: "https://raw.githubusercontent.com/mikok42/diverCompanion/master/diverCompanion/diverCompanion/siteData.json") { [self] (data) in
+            do {
+                guard let data = data else { return }
+                let tempdiveSites: [DiveSite] = try parser.parse(jsonData: data)
+                self.diveSites = tempdiveSites
+                DispatchQueue.main.async {
+                    self.updateUI()
+                }
+            } catch {
+                print(error)
+            }
+        }
+        
+//        do {
+//            let localData = try parser.readLocalFile(forName: "siteData")
+//            let tempdiveSites: [DiveSite] = try parser.parse(jsonData: localData)
+//            diveSites = tempdiveSites
+//            updateUI()
+//        } catch {
+//            print(error)
+//        }
     }
+    
     @IBAction func prevButtonPressed(_ sender: UIButton) {
         if siteArrayIterator > 0 {
             siteArrayIterator -= 1
@@ -38,6 +58,7 @@ class ViewController: UIViewController {
         }
         updateUI()
     }
+    
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         if siteArrayIterator  < diveSites.count - 1 {
             siteArrayIterator += 1
