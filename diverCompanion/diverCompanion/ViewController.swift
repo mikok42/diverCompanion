@@ -24,12 +24,11 @@ class ViewController: UIViewController {
         siteLocation.text =  diveSites[siteArrayIterator].location
         siteDescription.text =  diveSites[siteArrayIterator].description
     }
-    override func viewDidLoad() {
-        if let localData = parser.readLocalFile(forName: "siteData") {
-            let tempdiveSites: [DiveSite]? = parser.parse(jsonData: localData)
-            diveSites = tempdiveSites ?? []
-        }
-        updateUI()
+    override func viewDidLoad(){
+        guard let localData = parser.readLocalFile(forName: "siteData") else { return }
+        let tempdiveSites: [DiveSite]? = parser.parse(jsonData: localData)
+        diveSites = tempdiveSites ?? []
+                updateUI()
     }
     @IBAction func prevButtonPressed(_ sender: UIButton) {
         if siteArrayIterator > 0 {

@@ -14,7 +14,7 @@ class JSONParser{
     func readLocalFile(forName name: String) -> Data? {
         do {
             guard let bundlePath = Bundle.main.path(forResource: name, ofType: "json") else {throw DataParserError.fileDoesNotExist }
-            guard let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) else { throw DataParserError.invalidName }
+            guard let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) else { throw DataParserError.unableToDecode }
             return jsonData
         } catch {
             print(error)
