@@ -14,11 +14,11 @@ struct DiveSite: Codable {
     let pictureName: String
 }
 
-//optionals
-//ARC!
 //completion blocks
+
+//computed property!!!!
+//closures + funckje wyższego rzędu
+//klasy v. struktury
 
 //typy generyczne
 //UI alert view
-//obsługa błędów
-

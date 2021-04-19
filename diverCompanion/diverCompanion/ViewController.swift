@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var diveSites: [DiveSite] = []
     var siteArrayIterator = 0
+    let url: String = "https://raw.githubusercontent.com/mikok42/diverCompanion/master/diverCompanion/diverCompanion/siteData.json"
     
     let parser = JSONParser.sharedParser
     
@@ -27,13 +28,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        parser.readFromURL(fromURL: "https://raw.githubusercontent.com/mikok42/diverCompanion/master/diverCompanion/diverCompanion/siteData.json") { [self] (data) in
+        parser.readFromURL(fromURL: url) { [self] (data) in
             do {
                 guard let data = data else { return }
                 let tempdiveSites: [DiveSite] = try parser.parse(jsonData: data)
-                self.diveSites = tempdiveSites
+                diveSites = tempdiveSites
                 DispatchQueue.main.async {
-                    self.updateUI()
+                    updateUI()
                 }
             } catch {
                 print(error)
