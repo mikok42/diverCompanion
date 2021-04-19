@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" id="CKg-ax-ey5">
+                            <scrollView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="TopLeft" id="CKg-ax-ey5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -28,7 +28,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bt-ZR-NvH">
-                                        <rect key="frame" x="8" y="437" width="64.5" height="50"/>
+                                        <rect key="frame" x="8" y="437" width="398" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Iuy-bt-Rrz"/>
                                         </constraints>
@@ -43,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2y-Jj-kLv">
-                                        <rect key="frame" x="8" y="495" width="64.5" height="30"/>
+                                        <rect key="frame" x="8" y="495" width="398" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Aal-iz-JHQ"/>
                                         </constraints>
@@ -53,17 +53,33 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="82j-qh-WPn" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="0eB-gG-Gp3"/>
+                                    <constraint firstItem="3bt-ZR-NvH" firstAttribute="top" secondItem="2ay-VY-Xwr" secondAttribute="bottom" constant="8" id="7qb-AA-mgq"/>
                                     <constraint firstItem="q2y-Jj-kLv" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="A9a-VK-PX1"/>
+                                    <constraint firstItem="3bt-ZR-NvH" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="ADX-py-eHm"/>
                                     <constraint firstItem="82j-qh-WPn" firstAttribute="top" secondItem="q2y-Jj-kLv" secondAttribute="bottom" constant="8" id="EM8-qi-JQK"/>
                                     <constraint firstAttribute="trailing" secondItem="3bt-ZR-NvH" secondAttribute="trailing" constant="8" id="FNa-37-Eck"/>
                                     <constraint firstItem="82j-qh-WPn" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="Fa1-Jc-4BS"/>
+                                    <constraint firstItem="2ay-VY-Xwr" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" id="GeB-ab-t8d"/>
+                                    <constraint firstItem="3bt-ZR-NvH" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="GqS-KI-q4i"/>
+                                    <constraint firstItem="tHB-hd-etO" firstAttribute="trailing" secondItem="3bt-ZR-NvH" secondAttribute="trailing" constant="8" id="IOj-ik-ejs"/>
                                     <constraint firstItem="3bt-ZR-NvH" firstAttribute="top" secondItem="2ay-VY-Xwr" secondAttribute="bottom" constant="8" id="KMB-g3-U5j"/>
+                                    <constraint firstItem="q2y-Jj-kLv" firstAttribute="top" secondItem="3bt-ZR-NvH" secondAttribute="bottom" constant="8" id="N93-wm-S1z"/>
                                     <constraint firstItem="3bt-ZR-NvH" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="P5t-ab-vut"/>
+                                    <constraint firstItem="tHB-hd-etO" firstAttribute="trailing" secondItem="82j-qh-WPn" secondAttribute="trailing" constant="8" id="SLR-sR-jHd"/>
+                                    <constraint firstItem="tHB-hd-etO" firstAttribute="trailing" secondItem="3bt-ZR-NvH" secondAttribute="trailing" constant="8" id="THc-Gt-cbf"/>
                                     <constraint firstItem="2ay-VY-Xwr" firstAttribute="top" secondItem="tHB-hd-etO" secondAttribute="top" id="TI8-ER-nLm"/>
                                     <constraint firstItem="2ay-VY-Xwr" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" id="WzW-2w-fkq"/>
                                     <constraint firstItem="2ay-VY-Xwr" firstAttribute="trailing" secondItem="tHB-hd-etO" secondAttribute="trailing" id="Y8m-YY-ynS"/>
+                                    <constraint firstItem="2ay-VY-Xwr" firstAttribute="top" secondItem="tHB-hd-etO" secondAttribute="top" id="chN-L0-bEC"/>
                                     <constraint firstAttribute="trailing" secondItem="q2y-Jj-kLv" secondAttribute="trailing" constant="8" id="ej1-JD-6ft"/>
+                                    <constraint firstItem="tHB-hd-etO" firstAttribute="trailing" secondItem="q2y-Jj-kLv" secondAttribute="trailing" constant="8" id="esV-2S-3Zz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nvh-9g-26T" secondAttribute="bottom" constant="100" id="f7f-Du-rjk"/>
+                                    <constraint firstItem="2ay-VY-Xwr" firstAttribute="trailing" secondItem="tHB-hd-etO" secondAttribute="trailing" id="lBv-oy-964"/>
+                                    <constraint firstItem="82j-qh-WPn" firstAttribute="top" secondItem="q2y-Jj-kLv" secondAttribute="bottom" constant="8" id="lUp-NG-jNy"/>
+                                    <constraint firstItem="q2y-Jj-kLv" firstAttribute="leading" secondItem="tHB-hd-etO" secondAttribute="leading" constant="8" id="okk-9P-Jnz"/>
                                     <constraint firstItem="tHB-hd-etO" firstAttribute="trailing" secondItem="82j-qh-WPn" secondAttribute="trailing" constant="8" id="pV7-TL-FQt"/>
+                                    <constraint firstItem="3bt-ZR-NvH" firstAttribute="top" secondItem="2ay-VY-Xwr" secondAttribute="bottom" constant="8" symbolic="YES" id="rcO-BP-zsY"/>
                                     <constraint firstItem="q2y-Jj-kLv" firstAttribute="top" secondItem="3bt-ZR-NvH" secondAttribute="bottom" constant="8" id="u4J-tg-SMB"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Nvh-9g-26T"/>
