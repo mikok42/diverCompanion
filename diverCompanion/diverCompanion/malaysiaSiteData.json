@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Sipadan Island",
+        "description": "Daedalus Reef (also known as Abu Kizan) is a 400-meter-long and 100-meter-wide (1,310–330 ft) standalone reef in the Egyptian Red Sea situated about 90 kilometers from Marsa Alam. There is a small artificial island in the center of the reef, which hosts a lighthouse constructed in 1863 and rebuilt in 1931. Daedalus reef is a well-known place for diving because of good chances to see pelagic fish, such as hammerhead sharks, and an abundance of corals. In the high season one can find many dive safari boats staying overnight, anchored to the reef.",
+        "location": "Celebes Sea, Malaysia",
+        "rating": 5,
+        "pictureName": "daedalusReef"
+    },
+    {
+        "name": "Lankayan Island",
+        "description": "The Thistlegorm wreck, on the west coast of the Sinai Peninsula and 40 km from Sharm El Sheikh, is the best known and most popular wreck dive in the Red Sea. The 125m long British army freighter sank after just 18 months of her launch in April 1940. Her last voyage commenced on the 2nd of June 1941 as she sailed to Alexandria and was loaded with wartime supplies during World War II. A long list of inventory includes tanks, aircraft, armoured vehicles, Jeeps and Bedford trucks.",
+        "location": "Sulu Sea, Malaysia",
+        "rating": 5,
+        "pictureName": "salemWreck"
+    },
+    {
+        "name": "Swallow Reef",
+        "description": "The Salem Express was a former 115m long passenger ferry which sank in 1991 at great human cost just south of Safaga. The immense tragedy of this event makes diving the Salem Express a unique experience that leaves a lasting impression on most scuba divers. She rests on her starboard side on a flat sand bottom at 27m of depth, with the shallowest section at just 7m.",
+        "location": "South China Sea, Malaysia",
+        "rating": 4,
+        "pictureName": "thistleGormWreck"
+    },
+    {
+        "name": "Mabul Island",
+        "description": "The Blue Hole is a submarine sinkhole, with a maximum depth within the hole of just over 100 m (328 feet). There is a shallow opening to the sea around 6 m (20 feet) deep, known as the saddle, and a 26 m (85 feet) long tunnel, known as the Arch, whose ceiling is at a depth of 55 m (181 feet), and whose bottom falls away as it reaches the seaward side to about 120 m (394 feet). On the seaward side the floor drops steeply to over 1,000 metres (3,300 ft). The hole and the surrounding area have an abundance of coral and reef fish. The Blue Hole is popular for freediving because of the depth directly accessible from shore and the lack of current.",
+        "location": "Celebes Sea, Malaysia",
+        "rating": 4,
+        "pictureName": "dahabBlueHole"
+    },
+]

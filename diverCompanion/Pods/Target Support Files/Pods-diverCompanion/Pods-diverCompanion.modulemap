@@ -1,0 +1,6 @@
+framework module Pods_diverCompanion {
+  umbrella header "Pods-diverCompanion-umbrella.h"
+
+  export *
+  module * { export * }
+}

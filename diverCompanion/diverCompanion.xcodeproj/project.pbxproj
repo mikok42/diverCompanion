@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D033EFE626402154002DF85F /* egyptSiteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EFE526402154002DF85F /* egyptSiteData.json */; };
+		D033EFEC264022E7002DF85F /* malaysiaSiteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EFE9264022E7002DF85F /* malaysiaSiteData.json */; };
+		D033EFED264022E7002DF85F /* polandSiteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EFEA264022E7002DF85F /* polandSiteData.json */; };
+		D033EFEE264022E7002DF85F /* sudanSiteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D033EFEB264022E7002DF85F /* sudanSiteData.json */; };
 		D0D0B1D02625C15C008EB1A0 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0B1CF2625C15C008EB1A0 /* JsonParser.swift */; };
 		D0D7788226207D7700767574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D7788126207D7700767574 /* AppDelegate.swift */; };
 		D0D7788426207D7700767574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D7788326207D7700767574 /* SceneDelegate.swift */; };
@@ -15,11 +19,14 @@
 		D0D7788B26207D7C00767574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D7788A26207D7C00767574 /* Assets.xcassets */; };
 		D0D7788E26207D7C00767574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D7788C26207D7C00767574 /* LaunchScreen.storyboard */; };
 		D0D77897262088EF00767574 /* diveSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D77896262088EF00767574 /* diveSite.swift */; };
-		D0F2A59726234C680084ADBD /* siteData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0F2A59626234C680084ADBD /* siteData.json */; };
 		D0F2A59A262378670084ADBD /* DataParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F2A599262378670084ADBD /* DataParserError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D033EFE526402154002DF85F /* egyptSiteData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = egyptSiteData.json; sourceTree = "<group>"; };
+		D033EFE9264022E7002DF85F /* malaysiaSiteData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = malaysiaSiteData.json; sourceTree = "<group>"; };
+		D033EFEA264022E7002DF85F /* polandSiteData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = polandSiteData.json; sourceTree = "<group>"; };
+		D033EFEB264022E7002DF85F /* sudanSiteData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sudanSiteData.json; sourceTree = "<group>"; };
 		D0D0B1CF2625C15C008EB1A0 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		D0D7787E26207D7700767574 /* diverCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diverCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D7788126207D7700767574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +37,6 @@
 		D0D7788D26207D7C00767574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0D7788F26207D7C00767574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D77896262088EF00767574 /* diveSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diveSite.swift; sourceTree = "<group>"; };
-		D0F2A59626234C680084ADBD /* siteData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = siteData.json; sourceTree = "<group>"; };
 		D0F2A599262378670084ADBD /* DataParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,9 +78,12 @@
 				D0D7788C26207D7C00767574 /* LaunchScreen.storyboard */,
 				D0D7788F26207D7C00767574 /* Info.plist */,
 				D0D77896262088EF00767574 /* diveSite.swift */,
-				D0F2A59626234C680084ADBD /* siteData.json */,
 				D0F2A599262378670084ADBD /* DataParserError.swift */,
+				D033EFE526402154002DF85F /* egyptSiteData.json */,
 				D0D0B1CF2625C15C008EB1A0 /* JsonParser.swift */,
+				D033EFE9264022E7002DF85F /* malaysiaSiteData.json */,
+				D033EFEA264022E7002DF85F /* polandSiteData.json */,
+				D033EFEB264022E7002DF85F /* sudanSiteData.json */,
 			);
 			path = diverCompanion;
 			sourceTree = "<group>";
@@ -136,7 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F2A59726234C680084ADBD /* siteData.json in Resources */,
+				D033EFEE264022E7002DF85F /* sudanSiteData.json in Resources */,
+				D033EFED264022E7002DF85F /* polandSiteData.json in Resources */,
+				D033EFEC264022E7002DF85F /* malaysiaSiteData.json in Resources */,
+				D033EFE626402154002DF85F /* egyptSiteData.json in Resources */,
 				D0D7788E26207D7C00767574 /* LaunchScreen.storyboard in Resources */,
 				D0D7788B26207D7C00767574 /* Assets.xcassets in Resources */,
 				D0D7788926207D7700767574 /* Main.storyboard in Resources */,
